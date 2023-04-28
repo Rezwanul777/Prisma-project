@@ -1,0 +1,23 @@
+.background{
+    background-color:  #2F2F2F;
+    height: 644px;
+}
+
+.quote{
+    quotes:""" """;
+    position: relative;
+    padding-left: 50px;
+   
+
+}
+
+.quote::before{
+    content: open-quote;
+    font-size: 8rem;
+    color: #8F8F8F;
+    position: absolute;
+    left: -8px;
+    top: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}

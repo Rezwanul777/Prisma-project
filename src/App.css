@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+/* font import */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+/* =========== #CSS VARIABLES =============*/
+
+:root{
+    /* colors */
+    --primary-color:#0454A9;
+    --secondary-color:#494949;
+    --text-color:#0454A9;
+    --bg-color:#ECECEC;
+   
+       /* shadow */
+       --shadow: 5px 5px rgb(255 255 255/10%); 
+       /* transition */
+       --transition: cubic-bezier(0.3,0,0.3,1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ h1{
+  font-size: 32px;
+  line-height: 130%;
+  font-weight: 700;
+  color: #0454A9;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2{
+  font-size: 28px;
+  line-height: 120%;
+  font-weight: 600;
+  color: #0454A9;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h3{
+  font-size: 25px;
+  line-height: 120%;
+  font-weight: 500;
+  color: #0454A9;
+} 
+
+p{
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 400;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* =================RESET============= */
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+body{
+   
+    background-color: var(--bg-color);   
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+body.no-scroll{
+    overflow: hidden;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+input,
+textarea,
+button{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+button{
+    cursor: pointer;
+}
+img{
+    max-width: 100%;
 }

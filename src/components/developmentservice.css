@@ -1,0 +1,31 @@
+.development-left{
+    
+    color: #fff;
+    text-align: center;
+    width: 277px;
+    height:400px;
+    background-color: #0454A9;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   /* position: relative; */
+}
+
+/* .dev-text{
+    
+    position: absolute;
+    margin-top: -160px;
+    padding-left: 75px;
+    text-align: center;
+    color: #fff;
+} */
+
+.dev-text{
+    order: 1;
+}
+
+h4{
+    color: #494949;
+  
+}
